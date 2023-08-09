@@ -7,7 +7,7 @@ function GeneralInformationForm() {
     let content = document.getElementById("general-information-form");
     content.classList.toggle("show");
 
-    let icon = document.getElementById("toggle-icon");
+    let icon = document.getElementById("general-information-toggle-icon");
 
     if (content.classList.contains("show")) {
       icon.src = expandLess;
@@ -21,7 +21,7 @@ function GeneralInformationForm() {
       <div>
         <span className="section-title">General Information</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img id="general-information-toggle-icon" src={expandMore} alt="toggle drop down" />
         </button>
       </div>
 

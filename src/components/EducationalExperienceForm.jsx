@@ -7,7 +7,7 @@ function EducationalExperienceForm() {
     let content = document.getElementById("educational-experience-form");
     content.classList.toggle("show");
 
-    let icon = document.getElementById("toggle-icon");
+    let icon = document.getElementById("educational-experience-toggle-icon");
 
     if (content.classList.contains("show")) {
       icon.src = expandLess;
@@ -21,7 +21,7 @@ function EducationalExperienceForm() {
       <div>
         <span className="section-title">Educational Experience</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img id="educational-experience-toggle-icon" src={expandMore} alt="toggle drop down" />
         </button>
       </div>
 

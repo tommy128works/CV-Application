@@ -7,7 +7,7 @@ function ProfessionalExperienceForm() {
     let content = document.getElementById("professional-experience-form");
     content.classList.toggle("show");
 
-    let icon = document.getElementById("toggle-icon");
+    let icon = document.getElementById("professional-experience-toggle-icon");
 
     if (content.classList.contains("show")) {
       icon.src = expandLess;
@@ -21,7 +21,7 @@ function ProfessionalExperienceForm() {
       <div>
         <span className="section-title">Professional Experience</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img id="professional-experience-toggle-icon" src={expandMore} alt="toggle drop down" />
         </button>
       </div>
 
