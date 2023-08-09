@@ -4,9 +4,16 @@ import CVForms from "./components/CVForms.jsx";
 import CVDisplay from "./components/CVDisplay.jsx";
 
 function App() {
+  const [generalInformation, setGeneralInformation] = useState({
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    cityProvince: null,
+  });
+
   return (
     <>
-      <CVForms />
+      <CVForms setGeneralInformation={setGeneralInformation} />
       <CVDisplay />
     </>
   );

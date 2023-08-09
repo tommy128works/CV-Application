@@ -1,7 +1,7 @@
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 
-function GeneralInformationForm() {
+function GeneralInformationForm({ setGeneralInformation }) {
   const toggleDropdown = () => {
     let content = document.getElementById("general-information-form");
     content.classList.toggle("show");
@@ -13,6 +13,20 @@ function GeneralInformationForm() {
     } else {
       icon.src = expandMore;
     }
+  };
+
+  const submitGeneralInformation = () => {
+    let fullName = document.getElementById("full_name").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phone_number").value;
+    let cityProvince = document.getElementById("city_province").value;
+
+    setGeneralInformation({
+      fullName: fullName,
+      email: email,
+      phoneNumber: phoneNumber,
+      cityProvince: cityProvince,
+    });
   };
 
   return (
@@ -56,6 +70,14 @@ function GeneralInformationForm() {
           name="city_province"
           placeholder="City, Province"
         ></input>
+
+        <button
+          type="button"
+          onClick={submitGeneralInformation}
+          className="submit-btn"
+        >
+          Submit
+        </button>
       </form>
     </>
   );

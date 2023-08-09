@@ -3,7 +3,7 @@ import GeneralInformationForm from "./GeneralInformationForm.jsx";
 import EducationalExperienceForm from "./EducationalExperienceForm.jsx";
 import ProfessionalExperienceForm from "./ProfessionalExperienceForm.jsx";
 
-function CVForms() {
+function CVForms({ setGeneralInformation }) {
   // add each form section
   // dummy content for now
   // add props later
@@ -12,7 +12,7 @@ function CVForms() {
 
   return (
     <div>
-      <GeneralInformationForm />
+      <GeneralInformationForm setGeneralInformation={setGeneralInformation} />
       <EducationalExperienceForm />
       <ProfessionalExperienceForm />
     </div>

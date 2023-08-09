@@ -10,9 +10,12 @@ form {
   align-items: flex-start;
 }
 
+form input {
+  background-color: white;
+}
+
 .dropbtn {
   background-color: #ff4d4d;
-  color: white;
   padding: 0px;
   margin-left: 5px;
   border: none;
@@ -33,4 +36,16 @@ form {
 
 .show {
   display: flex;
+}
+
+.submit-btn {
+  background-color: #00b006;
+  color: black;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0b6f00;
 }
