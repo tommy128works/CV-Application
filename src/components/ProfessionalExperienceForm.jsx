@@ -21,7 +21,11 @@ function ProfessionalExperienceForm() {
       <div>
         <span className="section-title">Professional Experience</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="professional-experience-toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img
+            id="professional-experience-toggle-icon"
+            src={expandMore}
+            alt="toggle drop down"
+          />
         </button>
       </div>
 
@@ -55,7 +59,6 @@ function ProfessionalExperienceForm() {
           name="description"
           placeholder="Job Responsibilities"
         ></input>
-
       </form>
     </>
   );

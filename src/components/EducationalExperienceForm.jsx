@@ -21,7 +21,11 @@ function EducationalExperienceForm() {
       <div>
         <span className="section-title">Educational Experience</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="educational-experience-toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img
+            id="educational-experience-toggle-icon"
+            src={expandMore}
+            alt="toggle drop down"
+          />
         </button>
       </div>
 

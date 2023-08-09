@@ -21,7 +21,11 @@ function GeneralInformationForm() {
       <div>
         <span className="section-title">General Information</span>
         <button onClick={toggleDropdown} className="dropbtn">
-          <img id="general-information-toggle-icon" src={expandMore} alt="toggle drop down" />
+          <img
+            id="general-information-toggle-icon"
+            src={expandMore}
+            alt="toggle drop down"
+          />
         </button>
       </div>
 
