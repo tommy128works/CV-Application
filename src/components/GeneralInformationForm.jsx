@@ -3,9 +3,8 @@ import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 
 function GeneralInformationForm() {
-
   const toggleDropdown = () => {
-    let content = document.getElementById("myDropdown")
+    let content = document.getElementById("general-information-form");
     content.classList.toggle("show");
 
     let icon = document.getElementById("toggle-icon");
@@ -15,7 +14,6 @@ function GeneralInformationForm() {
     } else {
       icon.src = expandMore;
     }
-
   };
 
   return (
@@ -27,7 +25,7 @@ function GeneralInformationForm() {
         </button>
       </div>
 
-      <form id="myDropdown" className="dropdown-content">
+      <form id="general-information-form" className="dropdown-content">
         <label htmlFor="full_name">Full Name: </label>
         <input
           type="text"
