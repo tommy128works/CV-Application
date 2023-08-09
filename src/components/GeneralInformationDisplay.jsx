@@ -1,5 +1,3 @@
-
-
 function GeneralInformationDisplay() {
   // full name
   // email

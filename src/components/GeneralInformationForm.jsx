@@ -20,13 +20,14 @@ function GeneralInformationForm() {
     <>
       <div>
         <span className="section-title">General Information</span>
-        <button onClick={toggleDropdown} className="dropbtn">
-          <img
-            id="general-information-toggle-icon"
-            src={expandMore}
-            alt="toggle drop down"
-          />
-        </button>
+
+        <img
+          id="general-information-toggle-icon"
+          src={expandMore}
+          alt="toggle drop down"
+          onClick={toggleDropdown}
+          className="dropbtn"
+        />
       </div>
 
       <form id="general-information-form" className="dropdown-content">

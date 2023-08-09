@@ -1,8 +1,5 @@
-
-
 function ProfessionalExperienceDisplay() {
-  // create array can generate list of educational points, etc. 
-
+  // create array can generate list of educational points, etc.
 
   // full name
   // email

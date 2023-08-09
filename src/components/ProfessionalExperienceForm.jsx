@@ -20,13 +20,13 @@ function ProfessionalExperienceForm() {
     <>
       <div>
         <span className="section-title">Professional Experience</span>
-        <button onClick={toggleDropdown} className="dropbtn">
-          <img
-            id="professional-experience-toggle-icon"
-            src={expandMore}
-            alt="toggle drop down"
-          />
-        </button>
+        <img
+          id="professional-experience-toggle-icon"
+          src={expandMore}
+          alt="toggle drop down"
+          onClick={toggleDropdown}
+          className="dropbtn"
+        />
       </div>
 
       <form id="professional-experience-form" className="dropdown-content">

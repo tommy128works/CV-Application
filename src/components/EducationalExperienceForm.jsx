@@ -20,13 +20,13 @@ function EducationalExperienceForm() {
     <>
       <div>
         <span className="section-title">Educational Experience</span>
-        <button onClick={toggleDropdown} className="dropbtn">
-          <img
-            id="educational-experience-toggle-icon"
-            src={expandMore}
-            alt="toggle drop down"
-          />
-        </button>
+        <img
+          onClick={toggleDropdown}
+          id="educational-experience-toggle-icon"
+          src={expandMore}
+          alt="toggle drop down"
+          className="dropbtn"
+        />
       </div>
 
       <form id="educational-experience-form" className="dropdown-content">

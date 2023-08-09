@@ -10,15 +10,11 @@ form {
   align-items: flex-start;
 }
 
-img {
-  margin: 0px;
-}
-
 .dropbtn {
   background-color: #ff4d4d;
   color: white;
   padding: 0px;
-  margin: 5px;
+  margin-left: 5px;
   border: none;
   cursor: pointer;
 }
