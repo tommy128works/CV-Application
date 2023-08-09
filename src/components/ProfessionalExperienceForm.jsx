@@ -2,9 +2,9 @@ import "../styles/formSection.css";
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 
-function EducationalExperienceForm() {
+function ProfessionalExperienceForm() {
   const toggleDropdown = () => {
-    let content = document.getElementById("educational-experience-form");
+    let content = document.getElementById("professional-experience-form");
     content.classList.toggle("show");
 
     let icon = document.getElementById("toggle-icon");
@@ -19,43 +19,27 @@ function EducationalExperienceForm() {
   return (
     <>
       <div>
-        <span className="section-title">Educational Experience</span>
+        <span className="section-title">Professional Experience</span>
         <button onClick={toggleDropdown} className="dropbtn">
           <img id="toggle-icon" src={expandMore} alt="toggle drop down" />
         </button>
       </div>
 
-      <form id="educational-experience-form" className="dropdown-content">
-        <label htmlFor="degree">Degree: </label>
+      <form id="professional-experience-form" className="dropdown-content">
+        <label htmlFor="job_title">Job Title: </label>
         <input
           type="text"
-          id="degree"
-          name="degree"
-          placeholder="Enter Degree / Field of Study"
+          id="job_title"
+          name="job_title"
+          placeholder="Enter Job Title"
         ></input>
 
-        <label htmlFor="school">School: </label>
+        <label htmlFor="company">Company: </label>
         <input
           type="text"
-          id="school"
-          name="school"
-          placeholder="Enter school / university"
-        ></input>
-
-        <label htmlFor="city">City: </label>
-        <input
-          type="text"
-          id="city"
-          name="city"
-          placeholder="Enter City"
-        ></input>
-
-        <label htmlFor="country">Country: </label>
-        <input
-          type="text"
-          id="country"
-          name="country"
-          placeholder="Enter Country"
+          id="company"
+          name="company"
+          placeholder="Enter Company"
         ></input>
 
         <label htmlFor="start_date">Start Date: </label>
@@ -63,9 +47,18 @@ function EducationalExperienceForm() {
 
         <label htmlFor="end_date">End Date: </label>
         <input type="date" id="end_date" name="end_date"></input>
+
+        <label htmlFor="description">Description: </label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="Job Responsibilities"
+        ></input>
+
       </form>
     </>
   );
 }
 
-export default EducationalExperienceForm;
+export default ProfessionalExperienceForm;
