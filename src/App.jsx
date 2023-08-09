@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <CVForms setGeneralInformation={setGeneralInformation} />
-      <CVDisplay />
+      <CVDisplay generalInformation={generalInformation} />
     </>
   );
 }

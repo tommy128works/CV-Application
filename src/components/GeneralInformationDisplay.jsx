@@ -1,16 +1,12 @@
-function GeneralInformationDisplay() {
-  // full name
-  // email
-  // phone number
-  // city and province
+function GeneralInformationDisplay({ generalInformation }) {
   return (
     <>
-      <h1>John Smith</h1>
+      <h1>{generalInformation.fullName}</h1>
 
       <div>
-        <span>email@gmail.com</span>
-        <span>(555) 555-5555</span>
-        <span>Edmonton, AB</span>
+        <span>{generalInformation.email}</span>
+        <span>{generalInformation.phoneNumber}</span>
+        <span>{generalInformation.cityProvince}</span>
       </div>
     </>
   );
