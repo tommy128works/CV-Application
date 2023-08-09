@@ -1,5 +1,8 @@
-import GeneralInformationDisplay from "./GeneralInformationDisplay.jsx";
 import "../styles/CVDisplay.css"
+import GeneralInformationDisplay from "./GeneralInformationDisplay.jsx";
+import EducationalExperienceDisplay from "./EducationalExperienceDisplay.jsx";
+import ProfessionalExperienceDisplay from "./ProfessionalExperienceDisplay.jsx";
+
 
 function CVDisplay() {
   // add each form section
@@ -11,6 +14,8 @@ function CVDisplay() {
   return (
     <div>
       <GeneralInformationDisplay />
+      <ProfessionalExperienceDisplay />
+      <EducationalExperienceDisplay />
     </div>
   );
 }
