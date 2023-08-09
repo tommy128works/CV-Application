@@ -1,4 +1,3 @@
-import "../styles/formSection.css";
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 
