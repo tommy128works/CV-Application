@@ -1,25 +1,17 @@
-function EducationalExperienceDisplay() {
-  // create array can generate list of educational points, etc.
-
-  // Degree
-  // School
-  // Dates
-  // City, State
-
-  // additional description bullet points hmhmhm
+function EducationalExperienceDisplay({educationalExperience}) {
 
   return (
     <>
       <h1>EDUCATION</h1>
 
       <div>
-        <span>University Name</span>
-        <span>Month, Year - Month, Year</span>
+        <span>{educationalExperience.school}</span>
+        <span>{educationalExperience.startDate} - {educationalExperience.endDate}</span>
       </div>
 
       <div>
-        <span>Degree, Majors</span>
-        <span>City, State</span>
+        <span>{educationalExperience.degree}</span>
+        <span>{educationalExperience.city} , {educationalExperience.country}</span>
       </div>
 
       <div>

@@ -1,7 +1,7 @@
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 
-function EducationalExperienceForm() {
+function EducationalExperienceForm({ setEducationalExperience }) {
   const toggleDropdown = () => {
     let content = document.getElementById("educational-experience-form");
     content.classList.toggle("show");
@@ -14,6 +14,25 @@ function EducationalExperienceForm() {
       icon.src = expandMore;
     }
   };
+
+  const submitEducationalExperience = () => {
+    let degree = document.getElementById("degree").value;
+    let school = document.getElementById("school").value;
+    let city = document.getElementById("city").value;
+    let country = document.getElementById("country").value;
+    let startDate = document.getElementById("start_date").value;
+    let endDate = document.getElementById("end_date").value;
+
+    setEducationalExperience({
+      degree: degree,
+      school: school,
+      city: city,
+      country: country,
+      startDate: startDate,
+      endDate: endDate,
+    });
+  };
+
 
   return (
     <>
@@ -66,6 +85,14 @@ function EducationalExperienceForm() {
 
         <label htmlFor="end_date">End Date: </label>
         <input type="date" id="end_date" name="end_date"></input>
+
+        <button
+          type="button"
+          onClick={submitEducationalExperience}
+          className="submit-btn"
+        >
+          Submit
+        </button>
       </form>
     </>
   );
