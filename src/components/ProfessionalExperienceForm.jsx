@@ -1,5 +1,6 @@
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
+import work from "../assets/work.svg";
 
 function ProfessionalExperienceForm() {
   const toggleDropdown = () => {
@@ -16,8 +17,10 @@ function ProfessionalExperienceForm() {
   };
 
   return (
-    <>
-      <div>
+    <div className="form-container">
+      <div className="center-items-vertically">
+        <img src={work} alt="work icon" />
+
         <span className="section-title">Professional Experience</span>
         <img
           id="professional-experience-toggle-icon"
@@ -45,11 +48,17 @@ function ProfessionalExperienceForm() {
           placeholder="Enter Company"
         ></input>
 
-        <label htmlFor="start_date">Start Date: </label>
-        <input type="date" id="start_date" name="start_date"></input>
+        <div className="dates-container">
+          <div>
+            <label htmlFor="start_date">Start Date: </label>
+            <input type="date" id="start_date" name="start_date"></input>
+          </div>
 
-        <label htmlFor="end_date">End Date: </label>
-        <input type="date" id="end_date" name="end_date"></input>
+          <div>
+            <label htmlFor="end_date">End Date: </label>
+            <input type="date" id="end_date" name="end_date"></input>
+          </div>
+        </div>
 
         <label htmlFor="description">Description: </label>
         <input
@@ -59,7 +68,7 @@ function ProfessionalExperienceForm() {
           placeholder="Job Responsibilities"
         ></input>
       </form>
-    </>
+    </div>
   );
 }
 
