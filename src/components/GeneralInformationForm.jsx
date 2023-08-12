@@ -1,5 +1,6 @@
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
+import person from "../assets/person.svg";
 
 function GeneralInformationForm({ setGeneralInformation }) {
   const toggleDropdown = () => {
@@ -30,8 +31,10 @@ function GeneralInformationForm({ setGeneralInformation }) {
   };
 
   return (
-    <>
-      <div>
+    <div className="form-container">
+      <div className="center-items-vertically">
+        <img src={person} alt="person icon" />
+
         <span className="section-title">General Information</span>
 
         <img
@@ -71,15 +74,17 @@ function GeneralInformationForm({ setGeneralInformation }) {
           placeholder="City, Province"
         ></input>
 
-        <button
-          type="button"
-          onClick={submitGeneralInformation}
-          className="submit-btn"
-        >
-          Submit
-        </button>
+        <div className="buttons-container">
+          <button
+            type="button"
+            onClick={submitGeneralInformation}
+            className="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
       </form>
-    </>
+    </div>
   );
 }
 

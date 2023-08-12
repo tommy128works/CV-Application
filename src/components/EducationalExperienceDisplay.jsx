@@ -1,17 +1,20 @@
-function EducationalExperienceDisplay({educationalExperience}) {
-
+function EducationalExperienceDisplay({ educationalExperience }) {
   return (
     <>
       <h1>EDUCATION</h1>
 
       <div>
         <span>{educationalExperience.school}</span>
-        <span>{educationalExperience.startDate} - {educationalExperience.endDate}</span>
+        <span>
+          {educationalExperience.startDate} - {educationalExperience.endDate}
+        </span>
       </div>
 
       <div>
         <span>{educationalExperience.degree}</span>
-        <span>{educationalExperience.city} , {educationalExperience.country}</span>
+        <span>
+          {educationalExperience.city} , {educationalExperience.country}
+        </span>
       </div>
 
       <div>

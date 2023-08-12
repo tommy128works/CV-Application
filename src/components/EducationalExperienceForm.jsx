@@ -33,7 +33,6 @@ function EducationalExperienceForm({ setEducationalExperience }) {
     });
   };
 
-
   return (
     <>
       <div>

@@ -8,7 +8,9 @@ function CVDisplay({ generalInformation, educationalExperience }) {
     <div id="CV-container">
       <GeneralInformationDisplay generalInformation={generalInformation} />
       <ProfessionalExperienceDisplay />
-      <EducationalExperienceDisplay educationalExperience={educationalExperience} />
+      <EducationalExperienceDisplay
+        educationalExperience={educationalExperience}
+      />
     </div>
   );
 }
