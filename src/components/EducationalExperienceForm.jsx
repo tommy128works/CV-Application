@@ -1,5 +1,6 @@
 import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
+import school from "../assets/school.svg";
 
 function EducationalExperienceForm({ setEducationalExperience }) {
   const toggleDropdown = () => {
@@ -34,8 +35,10 @@ function EducationalExperienceForm({ setEducationalExperience }) {
   };
 
   return (
-    <>
-      <div>
+    <div className="form-container">
+      <div className="center-items-vertically">
+        <img src={school} alt="education icon" />
+
         <span className="section-title">Educational Experience</span>
         <img
           onClick={toggleDropdown}
@@ -79,21 +82,29 @@ function EducationalExperienceForm({ setEducationalExperience }) {
           placeholder="Enter Country"
         ></input>
 
-        <label htmlFor="start_date">Start Date: </label>
-        <input type="date" id="start_date" name="start_date"></input>
+        <div className="dates-container">
+          <div>
+            <label htmlFor="start_date">Start Date: </label>
+            <input type="date" id="start_date" name="start_date"></input>
+          </div>
 
-        <label htmlFor="end_date">End Date: </label>
-        <input type="date" id="end_date" name="end_date"></input>
+          <div>
+            <label htmlFor="end_date">End Date: </label>
+            <input type="date" id="end_date" name="end_date"></input>
+          </div>
+        </div>
 
-        <button
-          type="button"
-          onClick={submitEducationalExperience}
-          className="submit-btn"
-        >
-          Submit
-        </button>
+        <div className="buttons-container">
+          <button
+            type="button"
+            onClick={submitEducationalExperience}
+            className="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
       </form>
-    </>
+    </div>
   );
 }
 

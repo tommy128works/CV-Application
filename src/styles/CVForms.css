@@ -1,11 +1,16 @@
 :root {
-  --container-padding: 20px;
+  --container-padding: 15px;
   --main-background-color: rgb(224, 224, 224);
 }
 
 .section-title {
   font-size: 2rem;
   color: black;
+}
+
+img {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 form {
@@ -45,8 +50,7 @@ input {
 }
 
 .buttons-container {
-  display: flex;
-  align-self: flex-end
+  align-self: flex-end;
 }
 
 .submit-btn {
@@ -77,4 +81,18 @@ input {
   border-radius: 25px;
   padding: var(--container-padding);
   background-color: white;
+}
+
+.dates-container {
+  display: flex;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.dates-container > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
 }
