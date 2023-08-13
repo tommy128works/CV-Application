@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import CVForms from "./components/CVForms.jsx";
 import CVDisplay from "./components/CVDisplay.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [generalInformation, setGeneralInformation] = useState({
@@ -22,14 +23,18 @@ function App() {
 
   return (
     <>
-      <CVForms
-        setGeneralInformation={setGeneralInformation}
-        setEducationalExperience={setEducationalExperience}
-      />
-      <CVDisplay
-        generalInformation={generalInformation}
-        educationalExperience={educationalExperience}
-      />
+      <div id="content-container">
+        <CVForms
+          setGeneralInformation={setGeneralInformation}
+          setEducationalExperience={setEducationalExperience}
+        />
+        <CVDisplay
+          generalInformation={generalInformation}
+          educationalExperience={educationalExperience}
+        />
+      </div>
+
+      <Footer />
     </>
   );
 }

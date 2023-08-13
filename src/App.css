@@ -1,10 +1,44 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
   background-color: rgb(224, 224, 224);
+}
+
+footer {
+  background-color: #949494;
+  color: black;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  align-items: center;
+}
+
+#footer-icon {
+  height: 1.5rem;
+  width: auto;
+  color: black;
+  margin: 5px;
+}
+
+#content-container {
+  flex: 1;
+
+  display: flex;
+  width: 100vw;
+}
+
+#content-container > div {
+  flex: 1;
+  margin: 3rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: brown;
+  }
 }
