@@ -94,6 +94,26 @@ function EducationalExperienceForm({ setEducationalExperience }) {
           </div>
         </div>
 
+        <label htmlFor="point_1">Additional Information: </label>
+        <input
+          type="text"
+          id="point_1"
+          name="point_1"
+          placeholder="Honors or GPA (only if over 3.3)"
+        ></input>
+        <input
+          type="text"
+          id="point_2"
+          name="point_2"
+          placeholder="Notable Achievements"
+        ></input>
+        <input
+          type="text"
+          id="point_3"
+          name="point_3"
+          placeholder="Extracurriculars, e.g. varsity sports"
+        ></input>
+
         <div className="buttons-container">
           <button
             type="button"
@@ -103,6 +123,7 @@ function EducationalExperienceForm({ setEducationalExperience }) {
             Submit
           </button>
         </div>
+        
       </form>
     </div>
   );
