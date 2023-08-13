@@ -60,12 +60,24 @@ function ProfessionalExperienceForm() {
           </div>
         </div>
 
-        <label htmlFor="description">Description: </label>
+        <label htmlFor="responsibility_1">Core Responsibilities: </label>
         <input
           type="text"
-          id="description"
-          name="description"
-          placeholder="Job Responsibilities"
+          id="responsibility_1"
+          name="responsibility_1"
+          placeholder="Responsibility #1"
+        ></input>
+        <input
+          type="text"
+          id="responsibility_2"
+          name="responsibility_2"
+          placeholder="Responsibility #2"
+        ></input>
+        <input
+          type="text"
+          id="responsibility_3"
+          name="responsibility_3"
+          placeholder="Responsibility #3"
         ></input>
       </form>
     </div>

@@ -7,10 +7,10 @@ function CVForms({ setGeneralInformation, setEducationalExperience }) {
   return (
     <div>
       <GeneralInformationForm setGeneralInformation={setGeneralInformation} />
+      <ProfessionalExperienceForm />
       <EducationalExperienceForm
         setEducationalExperience={setEducationalExperience}
       />
-      <ProfessionalExperienceForm />
     </div>
   );
 }
