@@ -6,10 +6,14 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   const [generalInformation, setGeneralInformation] = useState({
-    fullName: null,
-    email: null,
-    phoneNumber: null,
-    cityProvince: null,
+    fullName: "John Smith",
+    email: "email@gmail.com",
+    phoneNumber: "(555) 555-5555",
+    cityState: "San Francisco, California",
+  });
+
+  const [professionalExperience, setProfessionalExperience] = useState({
+    jobTitle: null,
   });
 
   const [educationalExperience, setEducationalExperience] = useState({

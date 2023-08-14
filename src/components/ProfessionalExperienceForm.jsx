@@ -32,6 +32,14 @@ function ProfessionalExperienceForm() {
       </div>
 
       <form id="professional-experience-form" className="dropdown-content">
+        <label htmlFor="company">Company: </label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Enter Company"
+        ></input>
+
         <label htmlFor="job_title">Job Title: </label>
         <input
           type="text"
@@ -40,12 +48,12 @@ function ProfessionalExperienceForm() {
           placeholder="Enter Job Title"
         ></input>
 
-        <label htmlFor="company">Company: </label>
+        <label htmlFor="job_title">Job Title: </label>
         <input
           type="text"
-          id="company"
-          name="company"
-          placeholder="Enter Company"
+          id="job_title"
+          name="job_title"
+          placeholder="Enter Job Title"
         ></input>
 
         <div className="dates-container">

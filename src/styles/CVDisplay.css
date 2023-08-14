@@ -5,4 +5,14 @@
 #CV-container {
   background-color: white;
   border: 2px solid black;
+  padding: 3rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.underline {
+  border-bottom: 1px solid black;
 }

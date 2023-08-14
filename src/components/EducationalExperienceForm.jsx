@@ -123,7 +123,6 @@ function EducationalExperienceForm({ setEducationalExperience }) {
             Submit
           </button>
         </div>
-        
       </form>
     </div>
   );

@@ -20,13 +20,13 @@ function GeneralInformationForm({ setGeneralInformation }) {
     let fullName = document.getElementById("full_name").value;
     let email = document.getElementById("email").value;
     let phoneNumber = document.getElementById("phone_number").value;
-    let cityProvince = document.getElementById("city_province").value;
+    let cityState = document.getElementById("city_state").value;
 
     setGeneralInformation({
       fullName: fullName,
       email: email,
       phoneNumber: phoneNumber,
-      cityProvince: cityProvince,
+      cityState: cityState,
     });
   };
 
@@ -66,12 +66,12 @@ function GeneralInformationForm({ setGeneralInformation }) {
           placeholder="Phone number"
         ></input>
 
-        <label htmlFor="city_province">City and province: </label>
+        <label htmlFor="city_state">City and State: </label>
         <input
           type="text"
-          id="city_province"
-          name="city_province"
-          placeholder="City, Province"
+          id="city_state"
+          name="city_state"
+          placeholder="City, State"
         ></input>
 
         <div className="buttons-container">
