@@ -17,7 +17,7 @@ function ProfessionalExperienceDisplay({ professionalExperience }) {
 
       <div>
         <ul>
-          <li> {professionalExperience.responsibility1} </li>
+          <li>{professionalExperience.responsibility1} </li>
           <li>{professionalExperience.responsibility2} </li>
           <li>{professionalExperience.responsibility3} </li>
         </ul>

@@ -25,8 +25,8 @@ function EducationalExperienceForm({ setEducationalExperience }) {
     let endDate = document.getElementById("end_date").value;
 
     setEducationalExperience({
-      degree: degree,
       school: school,
+      degree: degree,
       city: city,
       country: country,
       startDate: startDate,
@@ -50,6 +50,14 @@ function EducationalExperienceForm({ setEducationalExperience }) {
       </div>
 
       <form id="educational-experience-form" className="dropdown-content">
+        <label htmlFor="school">School: </label>
+        <input
+          type="text"
+          id="school"
+          name="school"
+          placeholder="Enter School / University Name"
+        ></input>
+
         <label htmlFor="degree">Degree: </label>
         <input
           type="text"
@@ -58,40 +66,21 @@ function EducationalExperienceForm({ setEducationalExperience }) {
           placeholder="Enter Degree / Field of Study"
         ></input>
 
-        <label htmlFor="school">School: </label>
+        <label htmlFor="city_state">City and State: </label>
         <input
           type="text"
-          id="school"
-          name="school"
-          placeholder="Enter school / university"
+          id="city_state"
+          name="city_state"
+          placeholder="City, ST"
         ></input>
 
-        <label htmlFor="city">City: </label>
-        <input
-          type="text"
-          id="city"
-          name="city"
-          placeholder="Enter City"
-        ></input>
-
-        <label htmlFor="country">Country: </label>
-        <input
-          type="text"
-          id="country"
-          name="country"
-          placeholder="Enter Country"
-        ></input>
-
-        <div className="dates-container">
-          <div>
-            <label htmlFor="start_date">Start Date: </label>
-            <input type="date" id="start_date" name="start_date"></input>
-          </div>
-
-          <div>
-            <label htmlFor="end_date">End Date: </label>
-            <input type="date" id="end_date" name="end_date"></input>
-          </div>
+        <div>
+          <label htmlFor="graduation_date">Start Date: </label>
+          <input
+            type="date"
+            id="graduation_date"
+            name="graduation_date"
+          ></input>
         </div>
 
         <label htmlFor="point_1">Additional Information: </label>
@@ -99,19 +88,19 @@ function EducationalExperienceForm({ setEducationalExperience }) {
           type="text"
           id="point_1"
           name="point_1"
-          placeholder="Honors or GPA (only if over 3.3)"
+          placeholder="Point #1"
         ></input>
         <input
           type="text"
           id="point_2"
           name="point_2"
-          placeholder="Notable Achievements"
+          placeholder="Point #2"
         ></input>
         <input
           type="text"
           id="point_3"
           name="point_3"
-          placeholder="Extracurriculars, e.g. varsity sports"
+          placeholder="Point #3"
         ></input>
 
         <div className="buttons-container">

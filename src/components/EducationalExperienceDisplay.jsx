@@ -1,20 +1,16 @@
 function EducationalExperienceDisplay({ educationalExperience }) {
   return (
-    <>
-      <h1>EDUCATION</h1>
+    <div>
+      <div className="section-heading underline">EDUCATION</div>
 
-      <div>
-        <span>{educationalExperience.school}</span>
-        <span>
-          {educationalExperience.startDate} - {educationalExperience.endDate}
-        </span>
+      <div className="left-right-line slight-bold">
+        <span className="left">{educationalExperience.school}</span>
+        <span className="right">{educationalExperience.graduationDate}</span>
       </div>
 
-      <div>
-        <span>{educationalExperience.degree}</span>
-        <span>
-          {educationalExperience.city} , {educationalExperience.country}
-        </span>
+      <div className="left-right-line italic">
+        <span className="left">{educationalExperience.degree}</span>
+        <span className="right">{educationalExperience.cityState}</span>
       </div>
 
       <div>
@@ -33,7 +29,7 @@ function EducationalExperienceDisplay({ educationalExperience }) {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
