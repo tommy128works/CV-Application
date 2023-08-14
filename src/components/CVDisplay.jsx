@@ -3,11 +3,17 @@ import GeneralInformationDisplay from "./GeneralInformationDisplay.jsx";
 import EducationalExperienceDisplay from "./EducationalExperienceDisplay.jsx";
 import ProfessionalExperienceDisplay from "./ProfessionalExperienceDisplay.jsx";
 
-function CVDisplay({ generalInformation, educationalExperience }) {
+function CVDisplay({
+  generalInformation,
+  professionalExperience,
+  educationalExperience,
+}) {
   return (
     <div id="CV-container">
       <GeneralInformationDisplay generalInformation={generalInformation} />
-      <ProfessionalExperienceDisplay />
+      <ProfessionalExperienceDisplay
+        professionalExperience={professionalExperience}
+      />
       <EducationalExperienceDisplay
         educationalExperience={educationalExperience}
       />

@@ -9,11 +9,18 @@ function App() {
     fullName: "John Smith",
     email: "email@gmail.com",
     phoneNumber: "(555) 555-5555",
-    cityState: "San Francisco, California",
+    cityState: "San Francisco, CA",
   });
 
   const [professionalExperience, setProfessionalExperience] = useState({
-    jobTitle: null,
+    company: "Company Name",
+    jobTitle: "Job Title",
+    cityState: "City, ST",
+    startDate: "Month, Year",
+    endDate: "Month, Year",
+    responsibility1: "Core responsibility #1",
+    responsibility2: "Core responsibility #2",
+    responsibility3: "Core responsibility #3",
   });
 
   const [educationalExperience, setEducationalExperience] = useState({
@@ -34,6 +41,7 @@ function App() {
         />
         <CVDisplay
           generalInformation={generalInformation}
+          professionalExperience={professionalExperience}
           educationalExperience={educationalExperience}
         />
       </div>

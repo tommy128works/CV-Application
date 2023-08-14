@@ -71,7 +71,7 @@ function GeneralInformationForm({ setGeneralInformation }) {
           type="text"
           id="city_state"
           name="city_state"
-          placeholder="City, State"
+          placeholder="City, ST"
         ></input>
 
         <div className="buttons-container">

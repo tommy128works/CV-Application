@@ -48,12 +48,12 @@ function ProfessionalExperienceForm() {
           placeholder="Enter Job Title"
         ></input>
 
-        <label htmlFor="job_title">Job Title: </label>
+        <label htmlFor="city_state">City and State: </label>
         <input
           type="text"
-          id="job_title"
-          name="job_title"
-          placeholder="Enter Job Title"
+          id="city_state"
+          name="city_state"
+          placeholder="City, ST"
         ></input>
 
         <div className="dates-container">

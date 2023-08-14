@@ -1,13 +1,13 @@
 function GeneralInformationDisplay({ generalInformation }) {
   return (
-    <>
-      <div className="section-heading underline">{generalInformation.fullName}</div>
+    <div>
+      <div className="name-title underline">{generalInformation.fullName}</div>
 
       <div className="underline">
         {generalInformation.email} ❖ {generalInformation.phoneNumber} ❖{" "}
         {generalInformation.cityState}
       </div>
-    </>
+    </div>
   );
 }
 

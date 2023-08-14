@@ -1,32 +1,28 @@
-function ProfessionalExperienceDisplay() {
-  // create array can generate list of educational points, etc.
-
-  // full name
-  // email
-  // phone number
-  // city and province
+function ProfessionalExperienceDisplay({ professionalExperience }) {
   return (
-    <>
-      <h1>WORK EXPERIENCE</h1>
+    <div>
+      <div className="section-heading underline">WORK EXPERIENCE</div>
 
-      <div>
-        <span>Company</span>
-        <span>Month, Year - Month, Year</span>
+      <div className="left-right-line slight-bold">
+        <span className="left">{professionalExperience.company}</span>
+        <span className="right">
+          {professionalExperience.startDate} - {professionalExperience.endDate}
+        </span>
       </div>
 
-      <div>
-        <span>Job Title</span>
-        <span>City, State</span>
+      <div className="left-right-line italic">
+        <span className="left">Job Title</span>
+        <span className="right">City, State</span>
       </div>
 
       <div>
         <ul>
-          <li>Core responsibility #1</li>
-          <li>Core responsibility #2</li>
-          <li>Core responsibility #3</li>
+          <li> {professionalExperience.responsibility1} </li>
+          <li>{professionalExperience.responsibility2} </li>
+          <li>{professionalExperience.responsibility3} </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
