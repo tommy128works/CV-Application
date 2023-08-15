@@ -3,11 +3,17 @@ import GeneralInformationForm from "./GeneralInformationForm.jsx";
 import EducationalExperienceForm from "./EducationalExperienceForm.jsx";
 import ProfessionalExperienceForm from "./ProfessionalExperienceForm.jsx";
 
-function CVForms({ setGeneralInformation, setEducationalExperience }) {
+function CVForms({
+  setGeneralInformation,
+  setProfessionalExperience,
+  setEducationalExperience,
+}) {
   return (
     <div>
       <GeneralInformationForm setGeneralInformation={setGeneralInformation} />
-      <ProfessionalExperienceForm />
+      <ProfessionalExperienceForm
+        setProfessionalExperience={setProfessionalExperience}
+      />
       <EducationalExperienceForm
         setEducationalExperience={setEducationalExperience}
       />

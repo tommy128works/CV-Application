@@ -11,8 +11,8 @@ function ProfessionalExperienceDisplay({ professionalExperience }) {
       </div>
 
       <div className="left-right-line italic">
-        <span className="left">Job Title</span>
-        <span className="right">City, State</span>
+        <span className="left">{professionalExperience.jobTitle}</span>
+        <span className="right">{professionalExperience.cityState}</span>
       </div>
 
       <div>

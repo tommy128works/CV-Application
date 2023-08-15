@@ -42,6 +42,7 @@ function App() {
         <CVForms
           setGeneralInformation={setGeneralInformation}
           setEducationalExperience={setEducationalExperience}
+          setProfessionalExperience={setProfessionalExperience}
         />
         <CVDisplay
           generalInformation={generalInformation}

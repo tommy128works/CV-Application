@@ -17,20 +17,22 @@ function EducationalExperienceForm({ setEducationalExperience }) {
   };
 
   const submitEducationalExperience = () => {
-    let degree = document.getElementById("degree").value;
-    let school = document.getElementById("school").value;
-    let city = document.getElementById("city").value;
-    let country = document.getElementById("country").value;
-    let startDate = document.getElementById("start_date").value;
-    let endDate = document.getElementById("end_date").value;
+    let school = document.getElementById("educational_school").value;
+    let degree = document.getElementById("educational_degree").value;
+    let cityState = document.getElementById("educational_city_state").value;
+    let graduationDate = document.getElementById("educational_graduation_date").value;
+    let point1 = document.getElementById("educational_point_1").value;
+    let point2 = document.getElementById("educational_point_2").value;
+    let point3 = document.getElementById("educational_point_3").value;
 
     setEducationalExperience({
       school: school,
       degree: degree,
-      city: city,
-      country: country,
-      startDate: startDate,
-      endDate: endDate,
+      cityState: cityState,
+      graduationDate: graduationDate,
+      point1: point1,
+      point2: point2,
+      point3: point3,
     });
   };
 
@@ -50,56 +52,56 @@ function EducationalExperienceForm({ setEducationalExperience }) {
       </div>
 
       <form id="educational-experience-form" className="dropdown-content">
-        <label htmlFor="school">School: </label>
+        <label htmlFor="educational_school">School: </label>
         <input
           type="text"
-          id="school"
-          name="school"
+          id="educational_school"
+          name="educational_school"
           placeholder="Enter School / University Name"
         ></input>
 
-        <label htmlFor="degree">Degree: </label>
+        <label htmlFor="educational_degree">Degree: </label>
         <input
           type="text"
-          id="degree"
-          name="degree"
+          id="educational_degree"
+          name="educational_degree"
           placeholder="Enter Degree / Field of Study"
         ></input>
 
-        <label htmlFor="city_state">City and State: </label>
+        <label htmlFor="educational_city_state">City and State: </label>
         <input
           type="text"
-          id="city_state"
-          name="city_state"
+          id="educational_city_state"
+          name="educational_city_state"
           placeholder="City, ST"
         ></input>
 
         <div>
-          <label htmlFor="graduation_date">Start Date: </label>
+          <label htmlFor="educational_graduation_date">Graduation Date: </label>
           <input
             type="date"
-            id="graduation_date"
-            name="graduation_date"
+            id="educational_graduation_date"
+            name="educational_graduation_date"
           ></input>
         </div>
 
-        <label htmlFor="point_1">Additional Information: </label>
+        <label htmlFor="educational_point_1">Additional Information: </label>
         <input
           type="text"
-          id="point_1"
-          name="point_1"
+          id="educational_point_1"
+          name="educational_point_1"
           placeholder="Point #1"
         ></input>
         <input
           type="text"
-          id="point_2"
-          name="point_2"
+          id="educational_point_2"
+          name="educational_point_2"
           placeholder="Point #2"
         ></input>
         <input
           type="text"
-          id="point_3"
-          name="point_3"
+          id="educational_point_3"
+          name="educational_point_3"
           placeholder="Point #3"
         ></input>
 

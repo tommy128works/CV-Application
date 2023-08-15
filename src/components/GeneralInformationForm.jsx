@@ -17,10 +17,10 @@ function GeneralInformationForm({ setGeneralInformation }) {
   };
 
   const submitGeneralInformation = () => {
-    let fullName = document.getElementById("full_name").value;
-    let email = document.getElementById("email").value;
-    let phoneNumber = document.getElementById("phone_number").value;
-    let cityState = document.getElementById("city_state").value;
+    let fullName = document.getElementById("general_full_name").value;
+    let email = document.getElementById("general_email").value;
+    let phoneNumber = document.getElementById("general_phone_number").value;
+    let cityState = document.getElementById("general_city_state").value;
 
     setGeneralInformation({
       fullName: fullName,
@@ -47,30 +47,35 @@ function GeneralInformationForm({ setGeneralInformation }) {
       </div>
 
       <form id="general-information-form" className="dropdown-content">
-        <label htmlFor="full_name">Full Name: </label>
+        <label htmlFor="general_full_name">Full Name: </label>
         <input
           type="text"
-          id="full_name"
-          name="full_name"
+          id="general_full_name"
+          name="general_full_name"
           placeholder="Enter your full name"
         ></input>
 
-        <label htmlFor="email">Email: </label>
-        <input type="text" id="email" name="email" placeholder="Email"></input>
-
-        <label htmlFor="phone_number">Phone Number: </label>
+        <label htmlFor="general_email">Email: </label>
         <input
           type="text"
-          id="phone_number"
-          name="phone_number"
+          id="general_email"
+          name="general_email"
+          placeholder="Email"
+        ></input>
+
+        <label htmlFor="general_phone_number">Phone Number: </label>
+        <input
+          type="text"
+          id="general_phone_number"
+          name="general_phone_number"
           placeholder="Phone number"
         ></input>
 
-        <label htmlFor="city_state">City and State: </label>
+        <label htmlFor="general_city_state">City and State: </label>
         <input
           type="text"
-          id="city_state"
-          name="city_state"
+          id="general_city_state"
+          name="general_city_state"
           placeholder="City, ST"
         ></input>
 
