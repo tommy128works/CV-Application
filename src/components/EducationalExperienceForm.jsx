@@ -20,7 +20,9 @@ function EducationalExperienceForm({ setEducationalExperience }) {
     let school = document.getElementById("educational_school").value;
     let degree = document.getElementById("educational_degree").value;
     let cityState = document.getElementById("educational_city_state").value;
-    let graduationDate = document.getElementById("educational_graduation_date").value;
+    let graduationDate = document.getElementById(
+      "educational_graduation_date"
+    ).value;
     let point1 = document.getElementById("educational_point_1").value;
     let point2 = document.getElementById("educational_point_2").value;
     let point3 = document.getElementById("educational_point_3").value;

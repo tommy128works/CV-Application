@@ -2,6 +2,7 @@ import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 import work from "../assets/work.svg";
 
+
 function ProfessionalExperienceForm({ setProfessionalExperience }) {
   const toggleDropdown = () => {
     let content = document.getElementById("professional-experience-form");
@@ -102,6 +103,74 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
               id="professional_end_date"
               name="professional_end_date"
             ></input>
+          </div>
+        </div>
+
+        <div className="dates-container">
+          <div>
+            <label htmlFor="professional_start_month">Start Date:</label>
+
+            <div>
+              <select
+                id="professional_start_month"
+                name="professional_start_month"
+              >
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                step="1"
+                placeholder="2023"
+                id="professional_start_year"
+                name="professional_start_year"
+              ></input>
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="professional_end_month">End Date:</label>
+
+            <div>
+              <select
+                id="professional_end_month"
+                name="professional_end_month"
+              >
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                step="1"
+                placeholder="2023"
+                id="professional_end_year"
+                name="professional_end_year"
+              ></input>
+            </div>
           </div>
         </div>
 

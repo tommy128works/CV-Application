@@ -3,6 +3,16 @@
   --main-background-color: rgb(224, 224, 224);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .section-title {
   font-size: 2rem;
   color: black;
@@ -25,6 +35,12 @@ input {
   background-color: white;
   padding: 5px;
   width: calc(100% - var(--container-padding));
+  border-radius: 10px;
+}
+
+select {
+  background-color: white;
+  padding: 5px;
   border-radius: 10px;
 }
 
@@ -95,4 +111,13 @@ input {
   flex-direction: column;
   align-items: flex-start;
   row-gap: 5px;
+}
+
+.dates-container > div > div {
+  display: flex;
+  width: 100%;
+}
+
+.dates-container > div > div > * {
+  flex: 1;
 }
