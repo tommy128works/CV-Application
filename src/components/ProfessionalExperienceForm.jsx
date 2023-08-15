@@ -2,7 +2,6 @@ import expandMore from "../assets/expand_more.svg";
 import expandLess from "../assets/expand_less.svg";
 import work from "../assets/work.svg";
 
-
 function ProfessionalExperienceForm({ setProfessionalExperience }) {
   const toggleDropdown = () => {
     let content = document.getElementById("professional-experience-form");
@@ -127,10 +126,7 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
             <label htmlFor="professional_end_month">End Date:</label>
 
             <div>
-              <select
-                id="professional_end_month"
-                name="professional_end_month"
-              >
+              <select id="professional_end_month" name="professional_end_month">
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>

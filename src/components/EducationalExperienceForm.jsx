@@ -20,8 +20,11 @@ function EducationalExperienceForm({ setEducationalExperience }) {
     let school = document.getElementById("educational_school").value;
     let degree = document.getElementById("educational_degree").value;
     let cityState = document.getElementById("educational_city_state").value;
-    let graduationDate = document.getElementById(
-      "educational_graduation_date"
+    let graduationMonth = document.getElementById(
+      "educational_graduation_month"
+    ).value;
+    let graduationYear = document.getElementById(
+      "educational_graduation_year"
     ).value;
     let point1 = document.getElementById("educational_point_1").value;
     let point2 = document.getElementById("educational_point_2").value;
@@ -31,7 +34,7 @@ function EducationalExperienceForm({ setEducationalExperience }) {
       school: school,
       degree: degree,
       cityState: cityState,
-      graduationDate: graduationDate,
+      graduationDate: graduationMonth + ", " + graduationYear,
       point1: point1,
       point2: point2,
       point3: point3,
@@ -79,12 +82,33 @@ function EducationalExperienceForm({ setEducationalExperience }) {
         ></input>
 
         <div>
-          <label htmlFor="educational_graduation_date">Graduation Date: </label>
-          <input
-            type="date"
-            id="educational_graduation_date"
-            name="educational_graduation_date"
-          ></input>
+          <label htmlFor="educational_graduation_month">Graduation Date: </label>
+          <div className="dates-container">
+              <select id="educational_graduation_month" name="educational_graduation_month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                max="9999"
+                step="1"
+                placeholder="2023"
+                id="educational_graduation_year"
+                name="educational_graduation_year"
+              ></input>
+            </div>
         </div>
 
         <label htmlFor="educational_point_1">Additional Information: </label>
