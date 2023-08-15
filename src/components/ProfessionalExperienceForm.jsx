@@ -22,8 +22,10 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
     let jobTitle = document.getElementById("professional_job_title").value;
     let cityState = document.getElementById("professional_city_state").value;
     console.log(cityState);
-    let startDate = document.getElementById("professional_start_date").value;
-    let endDate = document.getElementById("professional_end_date").value;
+    let startMonth = document.getElementById("professional_start_month").value;
+    let startYear = document.getElementById("professional_start_year").value;
+    let endMonth = document.getElementById("professional_end_month").value;
+    let endYear = document.getElementById("professional_end_year").value;
     let responsibility1 = document.getElementById(
       "professional_responsibility_1"
     ).value;
@@ -38,8 +40,8 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
       company: company,
       jobTitle: jobTitle,
       cityState: cityState,
-      startDate: startDate,
-      endDate: endDate,
+      startDate: startMonth + ", " + startYear,
+      endDate: endMonth + ", " + endYear,
       responsibility1: responsibility1,
       responsibility2: responsibility2,
       responsibility3: responsibility3,
@@ -88,26 +90,6 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
 
         <div className="dates-container">
           <div>
-            <label htmlFor="professional_start_date">Start Date: </label>
-            <input
-              type="date"
-              id="professional_start_date"
-              name="professional_start_date"
-            ></input>
-          </div>
-
-          <div>
-            <label htmlFor="professional_end_date">End Date: </label>
-            <input
-              type="date"
-              id="professional_end_date"
-              name="professional_end_date"
-            ></input>
-          </div>
-        </div>
-
-        <div className="dates-container">
-          <div>
             <label htmlFor="professional_start_month">Start Date:</label>
 
             <div>
@@ -132,6 +114,7 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
               <input
                 type="number"
                 min="0"
+                max="9999"
                 step="1"
                 placeholder="2023"
                 id="professional_start_year"
@@ -165,6 +148,7 @@ function ProfessionalExperienceForm({ setProfessionalExperience }) {
               <input
                 type="number"
                 min="0"
+                max="9999"
                 step="1"
                 placeholder="2023"
                 id="professional_end_year"
