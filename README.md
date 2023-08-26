@@ -2,7 +2,7 @@
 
 ![Screenshot of the App Overview](/src/assets/screenshots/CV_Application_Showcase.png)
 
-[View DEMO Here!](???)
+[View DEMO Here!](https://splendid-cajeta-09fd33.netlify.app/)
 
 ## Project Description
 
@@ -39,7 +39,7 @@ npm run dev
 Then enter the indicated address into your browser!
 For example, "http://localhost:5173/".
 
-Otherwise, please check out the [DEMO!](???)
+Otherwise, please check out the [DEMO!](https://splendid-cajeta-09fd33.netlify.app/)
 
 ## How to Use the Project
 
